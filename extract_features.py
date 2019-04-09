@@ -19,7 +19,7 @@
 
 commands = """
 # Enter the docker container:
-docker run -v /Users/arno/GitHub/facefeatures:/root/demo/opendock -e DISPLAY=$DISPLAY:0 -p 5000:5000 -it spmallick/opencv-docker:opencv /bin/bash
+docker run -v /Users/arno/GitHub/face_features:/root/demo/opendock -e DISPLAY=$DISPLAY:0 -p 5000:5000 -it spmallick/opencv-docker:opencv /bin/bash
 workon OpenCV-master-py3
 ipython
 
@@ -31,7 +31,7 @@ exit()
 # Run the facial feature extraction code from within a shared directory shared between Docker and local host:
 cd /root/demo/opendock
 source activate OpenCV-master-py3
-python exxtract_features.py
+python extract_features.py
 """
 
 import cv2
